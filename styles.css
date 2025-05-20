@@ -67,7 +67,7 @@ nav {
 
 /*Hero Section*/
 .hero {
-    background: linear-gradient(rgba(230, 173, 173, 0.5), rgba(0, 0, 0, 0.5)), url('assets/hero.jpeg');
+    background: linear-gradient(rgba(238, 213, 213, 0.5), rgba(0, 0, 0, 0.5)), url('assets/hero.jpeg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -134,14 +134,23 @@ nav {
     margin-bottom: 2rem;
 }
 
-.spaces-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 250px)); 
-  gap: 2rem;
+.spaces-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    padding: auto;
+    gap: 2rem;
 
 }
 
 .space-card {
+    display:flex;
+    justify-content: center;;
+    flex-direction: column;
+    align-items:center;
+    width:100%;
+    max-width:350px ;
     background: white;
     border-radius: 6px;
     overflow: hidden;
@@ -192,13 +201,23 @@ nav {
     margin-bottom: 3rem;
 }
 
-.amenities-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+.amenities-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
+    padding: auto;
 }
 
 .amenity {
+    display:flex;
+    justify-content: center;;
+    flex-direction: column;
+    align-items:center;
+    width:50%;
+    height: 175px;
+    max-width: 200px;
     background: lightgray;/*enhance border transparency*/
     padding: 1rem 1rem;
     border-radius: 10px;
